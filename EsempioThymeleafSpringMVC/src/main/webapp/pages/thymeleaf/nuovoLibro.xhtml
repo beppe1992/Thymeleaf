@@ -1,0 +1,29 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Form nuovo Libro</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+
+	<form action="#" th:action="@{/inserisciLibro}" th:object="${libro}"
+		method="post">
+
+		<input type="text" id="titolo" name="titolo" th:value="*{titolo}" />
+
+		<input type="autore" id="autore" name="autore" th:value="*{autore}" />
+
+		<input type="anno" id="anno" name="anno" th:value="*{anno}" />
+
+
+
+		<button name="Aggiungi Libro" type="submit" value="Aggiungi Libro">Aggiungi
+			Libro</button>
+
+	</form>
+
+
+
+
+</body>
+</html>

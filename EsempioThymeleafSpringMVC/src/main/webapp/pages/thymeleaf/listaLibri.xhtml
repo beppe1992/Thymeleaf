@@ -1,0 +1,33 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Libri</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+
+	<div>
+		<table>
+			<thead>
+				<tr>
+					<th>Titolo</th>
+					<th>Autore</th>
+					<th>Anno</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="libro : ${libri}">
+					<td th:text="${libro.titolo}"></td>
+					<td th:text="${libro.autore}"></td>
+					<td th:text="${libro.anno}"></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+
+	<a th:href="@{/altriLibri}"> Recupera Altri Libri </a>
+
+
+</body>
+</html>
