@@ -5,6 +5,9 @@ Di seguito una lista completa degli esempi presenti in tale progetto:<br>
 2. Chiamata ad un metodo del controller che aggiunge un libro alla lista iniziale (utilizzo del costrutto th:href)
 3. Form di creazione di un nuovo libro (utilizzo dei costrutti th:action e th:object)
 
+### Framework
+Questo progetto utilizza Thymeleaf e Spring MVC
+
 ## Configurazioni necessarie
 Per provare il progetto è necessario installare Tomcat sul WorkSpace
 
